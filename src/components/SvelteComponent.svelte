@@ -5,5 +5,5 @@
   }
 </script>
 
-<p>Below Button counter is loaded from a svelte component</p>
-<button on:click={increment}>Count: {count}</button>
+<h2>Hello from Svelte!</h2>
+<button on:click={increment}>Svelte Count: {count}</button>

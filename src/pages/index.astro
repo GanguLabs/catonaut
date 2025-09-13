@@ -1,7 +1,7 @@
 ---
 import Placeholder from '../components/Placeholder.astro';
 import ReactComponent from '../components/react/ReactComponent.tsx';
-import MyCounter from '../components/SvelteComponent.svelte';
+import SvelteComponent from '../components/SvelteComponent.svelte';
 import VueComponent from '../components/VueComponent.vue';
 import SolidComponent from '../components/solid/SolidComponent.js';
 import PreactComponent from '../components/preact/PreactComponent.js';
@@ -17,10 +17,10 @@ import PreactComponent from '../components/preact/PreactComponent.js';
   </head>
   <body>
     <Placeholder />
-	<ReactComponent message="This is a message from a React component!" client:load />
-	<MyCounter client:load />
+	<ReactComponent client:load />
+	<SolidComponent client:only="solid-js" /> 
+	<PreactComponent client:only="preact" />
+	<SvelteComponent client:load />
 	<VueComponent client:load />
-	<SolidComponent client:load /> 
-	<PreactComponent name="World" client:load />
   </body>
 </html>

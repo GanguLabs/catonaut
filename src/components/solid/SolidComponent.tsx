@@ -2,7 +2,7 @@
 // /** @jsxImportSource solid-js */ is called JSX pragma
 import { createSignal } from 'solid-js';
 
-function MySolidComponent() {
+export default function MySolidComponent() {
   const [count, setCount] = createSignal(0);
 
   return (
@@ -14,5 +14,3 @@ function MySolidComponent() {
     </>
   );
 }
-
-export default MySolidComponent;

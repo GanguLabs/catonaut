@@ -1,12 +1,15 @@
 /** @jsxImportSource preact */
 // /** @jsxImportSource preact */ is called JSX pragma
+import { useState } from 'preact/hooks';
+import { h } from 'preact';
 
-function MyPreactComponent({ name }: { name: string }) {
+export default function MyPreactComponent() {
+  const [count, setCount] = useState(0);
+
   return (
     <div>
-      <h2>Hello, {name} from Preact!</h2>
+      <h2>Hello from Preact!</h2>
+      <button onClick={() => setCount(count + 1)}>Preact Count: {count}</button>
     </div>
   );
 }
-
-export default MyPreactComponent;

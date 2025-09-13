@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-export default function MyReactComponent({ message }: { message: string }) {
+export default function MyReactComponent() {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <h2>Hello {message} from React!</h2>
-      <button onClick={() => setCount(count + 1)}>Count {count}</button>
+      <h2>Hello from React!</h2>
+      <button onClick={() => setCount(count + 1)}>React Count {count}</button>
     </div>
   );
 }
