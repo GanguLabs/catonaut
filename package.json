@@ -5,10 +5,12 @@
   "dependencies": {
     "@astrojs/react": "^4.3.1",
     "@astrojs/svelte": "^7.1.1",
+    "@astrojs/vue": "^5.1.1",
     "astro": "^3.2.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
-    "svelte": "^5.1.16"
+    "svelte": "^5.1.16",
+    "vue": "^3.2.30"
   },
   "devDependencies": {
     "@types/chrome": "^0.0.246",
