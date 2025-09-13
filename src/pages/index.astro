@@ -1,6 +1,7 @@
 ---
 import Placeholder from '../components/Placeholder.astro';
 import ReactComponent from '../components/ReactComponent.tsx';
+import MyCounter from '../components/SvelteComponent.svelte';
 ---
 
 <html lang="en">
@@ -14,5 +15,6 @@ import ReactComponent from '../components/ReactComponent.tsx';
   <body>
     <Placeholder />
 	<ReactComponent message="This is a message from a React component!" client:load />
+	<MyCounter client:load />
   </body>
 </html>
