@@ -1,4 +1,5 @@
-import { h } from 'preact';
+/** @jsxImportSource preact */
+// /** @jsxImportSource preact */ is called JSX pragma
 
 function MyPreactComponent({ name }: { name: string }) {
   return (

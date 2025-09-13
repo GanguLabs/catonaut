@@ -1,3 +1,5 @@
+/** @jsxImportSource solid-js */
+// /** @jsxImportSource solid-js */ is called JSX pragma
 import { createSignal } from 'solid-js';
 
 function MySolidComponent() {

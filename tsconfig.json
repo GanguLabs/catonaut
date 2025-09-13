@@ -14,13 +14,17 @@
     "noEmit": true,
     "allowImportingTsExtensions": true,
     "moduleDetection": "force",
-    "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
-    "jsxImportSource": "preact"
+    
+	// "jsx": "react-jsx", // this is optional, as this is handled automatically by astro
+	
+	// // setting jsxImportSource can potentially cause issues with conflicting frameworks like react, preact, solidjs
+    // "jsxImportSource": "react" 
+	
   },
   "extends": "astro/tsconfigs/strict"
 }
