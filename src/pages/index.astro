@@ -1,26 +1,26 @@
 ---
 import Placeholder from '../components/Placeholder.astro';
+import PreactComponent from '../components/preact/PreactComponent.js';
 import ReactComponent from '../components/react/ReactComponent.tsx';
+import SolidComponent from '../components/solid/SolidComponent.js';
 import SvelteComponent from '../components/SvelteComponent.svelte';
 import VueComponent from '../components/VueComponent.vue';
-import SolidComponent from '../components/solid/SolidComponent.js';
-import PreactComponent from '../components/preact/PreactComponent.js';
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/images/icon128.png" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Astro Browser Extension Builder</title>
-  </head>
-  <body>
-    <Placeholder />
-	<ReactComponent client:load />
-	<SolidComponent client:only="solid-js" /> 
-	<PreactComponent client:only="preact" />
-	<SvelteComponent client:load />
-	<VueComponent client:load />
-  </body>
+<html lang='en'>
+	<head>
+		<meta charset='utf-8' />
+		<link rel='icon' type='image/svg+xml' href='/assets/images/icon128.png' />
+		<meta name='viewport' content='width=device-width' />
+		<meta name='generator' content={Astro.generator} />
+		<title>Astro Browser Extension Builder</title>
+	</head>
+	<body>
+		<Placeholder />
+		<ReactComponent client:load />
+		<SolidComponent client:only='solid-js' />
+		<PreactComponent client:only='preact' />
+		<SvelteComponent client:load />
+		<VueComponent client:load />
+	</body>
 </html>

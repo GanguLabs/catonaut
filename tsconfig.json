@@ -1,13 +1,7 @@
 {
   "compilerOptions": {
-    "types": [
-      "bun-types",
-      "./types.d.ts",
-      "@types/chrome"
-    ],
-    "lib": [
-      "esnext"
-    ],
+    "types": ["bun-types", "./types.d.ts", "@types/chrome"],
+    "lib": ["esnext"],
     "module": "esnext",
     "target": "esnext",
     "moduleResolution": "bundler",
@@ -18,13 +12,12 @@
     "esModuleInterop": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "skipLibCheck": true,
-    
-	// "jsx": "react-jsx", // this is optional, as this is handled automatically by astro
-	
-	// // setting jsxImportSource can potentially cause issues with conflicting frameworks like react, preact, solidjs
-    // "jsxImportSource": "react" 
-	
+    "skipLibCheck": true
+
+    // "jsx": "react-jsx", // this is optional, as this is handled automatically by astro
+
+    // // setting jsxImportSource can potentially cause issues with conflicting frameworks like react, preact, solidjs
+    // "jsxImportSource": "react"
   },
   "extends": "astro/tsconfigs/strict"
 }
