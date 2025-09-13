@@ -4,6 +4,7 @@ import ReactComponent from '../components/ReactComponent.tsx';
 import MyCounter from '../components/SvelteComponent.svelte';
 import VueComponent from '../components/VueComponent.vue';
 import SolidComponent from '../components/SolidComponent.jsx';
+import PreactComponent from '../components/PreactComponent.jsx';
 ---
 
 <html lang="en">
@@ -20,5 +21,6 @@ import SolidComponent from '../components/SolidComponent.jsx';
 	<MyCounter client:load />
 	<VueComponent client:load />
 	<SolidComponent client:load /> 
+	<PreactComponent name="World" client:load />
   </body>
 </html>
