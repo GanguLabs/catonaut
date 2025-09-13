@@ -5,7 +5,7 @@
  */
 
 import { exec } from 'child_process';
-import { copyFile } from 'fs/promises';
+import { copyFile, mkdir, stat } from 'fs/promises';
 import { join } from 'path';
 
 const srcDir = '../src';
@@ -14,7 +14,16 @@ const distDir = '../dist';
 
 async function copyExtensionFiles() {
   try {
-    // The build process will create the dist directory, so we don't need to do it here.
+    // Check if the dist directory exists, and create it if it doesn't
+    try {
+      await stat(distDir);
+    } catch (error) {
+      if (error.code === 'ENOENT') {
+        await mkdir(distDir, { recursive: true });
+      } else {
+        throw error;
+      }
+    }
 
     // Copy the manifest.json file
     await copyFile(
