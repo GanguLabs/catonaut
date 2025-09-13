@@ -22,7 +22,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}' '!build/**' '!node_modules/**'",
-    "csp": "bun extract-inline.ts",
+    "csp": "cd build-tools && bun extract-inline.ts",
     "icons": "cd build-tools && bun create-icons.ts"
   },
   "type": "module"
