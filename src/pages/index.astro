@@ -1,5 +1,6 @@
 ---
 import Placeholder from '../components/Placeholder.astro';
+import ReactComponent from '../components/ReactComponent.tsx';
 ---
 
 <html lang="en">
@@ -12,5 +13,6 @@ import Placeholder from '../components/Placeholder.astro';
   </head>
   <body>
     <Placeholder />
+	<ReactComponent message="This is a message from a React component!" client:load />
   </body>
 </html>
