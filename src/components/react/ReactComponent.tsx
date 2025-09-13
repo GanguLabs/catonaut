@@ -5,7 +5,7 @@ export default function MyReactComponent() {
   return (
     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
       <h2>Hello from React!</h2>
-      <button onClick={() => setCount(count + 1)}>React Count {count}</button>
+      <button onClick={() => setCount(count + 1)}>React Count: {count}</button>
     </div>
   );
 }
