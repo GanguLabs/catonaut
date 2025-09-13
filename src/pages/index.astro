@@ -3,6 +3,7 @@ import Placeholder from '../components/Placeholder.astro';
 import ReactComponent from '../components/ReactComponent.tsx';
 import MyCounter from '../components/SvelteComponent.svelte';
 import VueComponent from '../components/VueComponent.vue';
+import SolidComponent from '../components/SolidComponent.jsx';
 ---
 
 <html lang="en">
@@ -18,5 +19,6 @@ import VueComponent from '../components/VueComponent.vue';
 	<ReactComponent message="This is a message from a React component!" client:load />
 	<MyCounter client:load />
 	<VueComponent client:load />
+	<SolidComponent client:load /> 
   </body>
 </html>
