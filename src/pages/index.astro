@@ -17,10 +17,12 @@ import VueComponent from '../components/vue/VueComponent.vue';
 	</head>
 	<body>
 		<Placeholder />
-		<ReactComponent client:load />
-		<SolidComponent client:only='solid-js' />
-		<PreactComponent client:only='preact' />
-		<SvelteComponent client:load />
-		<VueComponent client:load />
+		<div style='overflow: auto; padding: 0 10px;'>
+			<ReactComponent client:load />
+			<SolidComponent client:only='solid-js' />
+			<PreactComponent client:only='preact' />
+			<SvelteComponent client:load />
+			<VueComponent client:load />
+		</div>
 	</body>
 </html>
