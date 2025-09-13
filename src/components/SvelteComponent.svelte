@@ -5,5 +5,7 @@
   }
 </script>
 
-<h2>Hello from Svelte!</h2>
-<button on:click={increment}>Svelte Count: {count}</button>
+<div style="display: flex; align-items: center; gap: 10px;">
+  <h2>Hello from Svelte!</h2>
+  <button on:click={increment}>Svelte Count: {count}</button>
+</div>

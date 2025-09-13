@@ -7,7 +7,7 @@ export default function MyPreactComponent() {
   const [count, setCount] = useState(0);
 
   return (
-    <div>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
       <h2>Hello from Preact!</h2>
       <button onClick={() => setCount(count + 1)}>Preact Count: {count}</button>
     </div>
